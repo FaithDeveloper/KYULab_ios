@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuItemView" id="iN0-l3-epB" customClass="MenuItemView" customModule="SampleCustomTabbar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuC-De-DJb">
+                    <rect key="frame" x="0.0" y="40" width="100" height="10"/>
+                    <color key="backgroundColor" red="0.71372549019999998" green="0.65490196079999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="uIv-Wy-uxy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaV-l9-EGx">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                    <state key="normal" title="Menu 1">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actionMenuBar:" destination="iN0-l3-epB" eventType="touchUpInside" id="XT7-cc-9RN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MuC-De-DJb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="37Q-Aa-80o"/>
+                <constraint firstItem="MuC-De-DJb" firstAttribute="top" secondItem="BaV-l9-EGx" secondAttribute="bottom" id="4eM-2r-GsZ"/>
+                <constraint firstItem="BaV-l9-EGx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GX3-yw-MnQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MuC-De-DJb" secondAttribute="trailing" id="NYd-kZ-XQy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BaV-l9-EGx" secondAttribute="trailing" id="TrI-Le-xfI"/>
+                <constraint firstAttribute="bottom" secondItem="MuC-De-DJb" secondAttribute="bottom" id="lHZ-pg-Ufx"/>
+                <constraint firstItem="BaV-l9-EGx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pDP-sI-jGF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnMenuBar" destination="BaV-l9-EGx" id="Eqn-tm-YZw"/>
+                <outlet property="viewBottomMenuBar" destination="MuC-De-DJb" id="xxT-UJ-Kcj"/>
+            </connections>
+            <point key="canvasLocation" x="41.600000000000001" y="46.776611694152926"/>
+        </view>
+    </objects>
+</document>
