@@ -15,14 +15,6 @@ KYU LAB iOS Project 로 다양한 프로젝트를 관리하고 있습니다.
 * [LoginHelperForFacebook-iOS](https://github.com/FaithDeveloper/LoginHelperForFacebook-iOS) : Facebook 회원가입 모듈
 * [SamplePopupDialog-iOS](https://github.com/FaithDeveloper/SamplePopupDialog-iOS) : 다이얼로그 모듈
 
-ㄴ<br/>
-
-## Custom View
-
-Custom View로 만든  프로젝트 입니다.
-
-* [SampleCustomTabbar](https://github.com/FaithDeveloper/SampleCustomTabbar-iOS) : Swift 로 작성된 Custom Tabbar Project
-
 <br/>
 
 ## Sample & Guide
@@ -32,9 +24,9 @@ Custom View로 만든  프로젝트 입니다.
 * [SampleRxSwift-iOS](https://github.com/FaithDeveloper/SampleRxSwift-iOS) : RxSwift 예제 
 * [SampleRxSwiftMVVM-iOS](https://github.com/FaithDeveloper/SampleRxSwiftMVVM-iOS) : RxSwift 을 활용한 MVVM 아키텍처 예제 
 * [SampleRealm-iOS](https://github.com/FaithDeveloper/SampleRealm-iOS) : Realm 을 Swift에서 활용한 예제
-
-* [TemplateForSwift-iOS](https://github.com/FaithDeveloper/TemplateForSwift-iOS) : `xcode` 에서 기본적으로 제공하는 것이 아닌 자신이 직접 만든 Template을 사용할 수 있는 방법 소개
+* [TemplateForSwift-iOS](https://github.com/FaithDeveloper/TemplateForSwift-iOS) : 직접 만든 Template을 사용할 수 있는 방법 소개
 * [CallKit-iOS](https://github.com/FaithDeveloper/CallKit-iOS) : CallKit의 기본적인 로직 및 사용법 정리
+* [SampleCustomTabbar](https://github.com/FaithDeveloper/SampleCustomTabbar-iOS) : Swift 로 작성된 Custom Tabbar Project
 * [PickerView-iOS](https://github.com/FaithDeveloper/PickerView-iOS) : PickerView 사용법 정리
 * [AddXibView-iOS](https://github.com/FaithDeveloper/AddXibView-iOS) : XibView 상용법 정리
 * [NotificationWithAlarm-iOS](https://github.com/FaithDeveloper/NotificationWithAlarm-iOS) : Lacal Notification을 사용한 Alarm
