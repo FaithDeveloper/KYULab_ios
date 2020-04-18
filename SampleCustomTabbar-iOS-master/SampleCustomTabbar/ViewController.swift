@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // 탭바에 표시할 View을 nib에서 가져온다.
         for i in 0 ..< 4 {
             if let nib = Bundle.main.loadNibNamed("MenuItemView",
                                                   owner: nil,
@@ -36,11 +37,12 @@ class ViewController: UIViewController {
                 
             }
         }
-        
-        
+                
+        // 예외 처리
         if viewFromNib.count == 0 {
             return
         }
+        
         menuScrollView.contentSize = CGSize(width: viewFromNib[0].frame.width * (CGFloat)(viewFromNib.count), height: menuScrollView.frame.height)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(menubarClickListener(_:)),
@@ -49,6 +51,9 @@ class ViewController: UIViewController {
                                                object: nil)
     }
 
+    
+    /// 메뉴 상단 버튼 클릭에 따른 이벤트
+    /// - Parameter notification: notification
     @objc func menubarClickListener(_ notification:NSNotification){
         let noti = notification.object
         if notification.name.rawValue != "click"{
